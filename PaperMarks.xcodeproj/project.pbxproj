@@ -45,8 +45,8 @@
 		DDF5E455182DE10C00254832 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DDF5E456182DE10C00254832 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DDF5E459182DE10C00254832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DDF5E45B182DE10C00254832 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DDF5E45C182DE10C00254832 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DDF5E45B182DE10C00254832 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		DDF5E45C182DE10C00254832 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		DDF5E45E182DE10C00254832 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DDF5E464182DE10C00254832 /* PaperMarksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperMarksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF5E465182DE10C00254832 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -112,11 +112,13 @@
 		DDF5E44C182DE10C00254832 /* PaperMarks */ = {
 			isa = PBXGroup;
 			children = (
+				DDF5E47C182DE87D00254832 /* models */,
+				DDF5E47D182DE87D00254832 /* views */,
+				DDF5E47E182DE87D00254832 /* controllers */,
+				DDF5E47F182DE87D00254832 /* connections */,
 				DDF5E455182DE10C00254832 /* AppDelegate.h */,
 				DDF5E456182DE10C00254832 /* AppDelegate.m */,
 				DDF5E458182DE10C00254832 /* Main.storyboard */,
-				DDF5E45B182DE10C00254832 /* ViewController.h */,
-				DDF5E45C182DE10C00254832 /* ViewController.m */,
 				DDF5E45E182DE10C00254832 /* Images.xcassets */,
 				DDF5E44D182DE10C00254832 /* Supporting Files */,
 			);
@@ -150,6 +152,36 @@
 				DDF5E46E182DE10C00254832 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDF5E47C182DE87D00254832 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		DDF5E47D182DE87D00254832 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		DDF5E47E182DE87D00254832 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDF5E45B182DE10C00254832 /* ViewController.h */,
+				DDF5E45C182DE10C00254832 /* ViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		DDF5E47F182DE87D00254832 /* connections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = connections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yue Li (NCDMTPJUYZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PaperMarks/PaperMarks-Prefix.pch";
 				INFOPLIST_FILE = "PaperMarks/PaperMarks-Info.plist";
@@ -391,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yue Li (NCDMTPJUYZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PaperMarks/PaperMarks-Prefix.pch";
 				INFOPLIST_FILE = "PaperMarks/PaperMarks-Info.plist";
